@@ -67,5 +67,14 @@
   function closeDialog(){ dialog.close(); frame.innerHTML = ""; }
   document.getElementById("closeDialog").addEventListener("click", closeDialog);
   dialog.addEventListener("click", e => { if(e.target === dialog) closeDialog(); });
+
+  document.querySelectorAll("[data-resume-lang]").forEach(button => {
+    button.addEventListener("click", () => {
+      const selected = button.dataset.resumeLang;
+      document.getElementById("resumeZh").hidden = selected !== "zh";
+      document.getElementById("resumeEn").hidden = selected !== "en";
+      document.querySelectorAll("[data-resume-lang]").forEach(item => item.classList.toggle("active", item === button));
+    });
+  });
   renderText();
 })();
