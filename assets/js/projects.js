@@ -71,5 +71,29 @@ window.PROJECTS = [
     description: "A video edit. Watch the original video on Bilibili.",
     descriptionZh: "一支个人剪辑作品。原视频发布于哔哩哔哩。",
     source: "https://www.bilibili.com/video/BV1UChZemEuE/"
-  }
+  },
+{
+    id: "006",
+    title: "Spanish Grand Prix — Poster Design",
+    titleZh: "西班牙大奖赛主题海报",
+    subtitle: "Graphic design / Motorsport poster",
+    subtitleZh: "美工设计 / 赛车主题海报",
+    category: "image",
+    cover: "assets/images/spanish-gp-poster.webp.png",
+    image: "assets/images/spanish-gp-poster.webp.png",
+    description: "A motorsport poster exploring editorial composition, typography and image collage.",
+    descriptionZh: "以西班牙大奖赛为主题的视觉设计，结合字体编排、复古质感与赛车图像拼贴。"
+  },
+  {
+    id: "007",
+    title: "Helmet — Halftone Study",
+    titleZh: "赛车头盔半调风格海报",
+    subtitle: "Graphic design / Halftone study",
+    subtitleZh: "美工设计 / 半调网点视觉",
+    category: "image",
+    cover: "assets/images/helmet-halftone.webp",
+    image: "assets/images/helmet-halftone.webp",
+    description: "A graphic study of a racing helmet using halftone texture and a restrained blue-and-white palette.",
+    descriptionZh: "以赛车头盔为主体，运用半调网点肌理与蓝白配色进行视觉表达。"
+  },
 ];
