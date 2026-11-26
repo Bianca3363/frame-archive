@@ -15,7 +15,7 @@ window.PROJECTS = [
     subtitleZh: "生日贺礼剪辑 / 哔哩哔哩",
     category: "film",
     cover: "assets/images/mv3-cover.jpg",
-    video: "https://player.bilibili.com/player.html?bvid=BV1Lbaf6gEFZ&page=1&danmaku=0",
+    video: "https://player.bilibili.com/player.html?isOutside=true&bvid=BV1Lbaf6gEFZ&page=1&autoplay=0",
     description: "A birthday tribute edit. Watch the original video on Bilibili.",
     descriptionZh: "一支生日主题的剪辑作品。原视频发布于哔哩哔哩。",
     source: "https://www.bilibili.com/video/BV1Lbaf6gEFZ/"
