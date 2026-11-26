@@ -24,3 +24,53 @@
 .resume-block ul{padding-left:17px;margin:8px 0}
 .resume-block li{padding-left:2px;margin:4px 0}
 @media(max-width:700px){.resume-section{padding:75px 6% 85px}.resume-heading{align-items:flex-start;gap:20px;flex-direction:column}.resume-paper{padding:24px 20px}.resume-columns{grid-template-columns:1fr;gap:0}.resume-entry-head{display:block}.resume-entry-head time{display:block;margin-top:3px}.resume-contact span{padding:0 3px}}
+
+/* Profile: soft, expandable CV cards */
+.resume-section{padding:92px 9.5% 105px;background:linear-gradient(180deg,#F3FAF9 0%,#EDF8F6 100%);border-bottom:1px solid var(--line)}
+.resume-heading{margin-bottom:28px}
+.resume-disclosure{max-width:1100px;margin:0 auto}
+.resume-disclosure>summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;border:1px solid #CFE5E1;border-radius:22px;background:rgba(255,255,255,.72);cursor:pointer;box-shadow:0 8px 28px rgba(37,111,105,.045);transition:background .25s,border-color .25s,transform .25s}
+.resume-disclosure>summary::-webkit-details-marker{display:none}
+.resume-disclosure>summary:hover{background:#fff;border-color:#9DD4CD;transform:translateY(-2px)}
+.disclosure-label{display:flex;align-items:center;gap:18px}
+.disclosure-index{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#DDF2EE;color:#279E95;font:11px var(--mono)}
+.disclosure-label strong{display:block;font:500 20px var(--serif);color:var(--text);margin-bottom:5px}
+.disclosure-label small{display:block;color:var(--muted);font-size:11px;line-height:1.6}
+.disclosure-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#DDF2EE;color:#238F88;font:20px var(--sans);transition:transform .25s}
+.resume-disclosure[open] .disclosure-icon{transform:rotate(45deg)}
+.resume-disclosure-content{padding-top:22px;animation:resumeReveal .35s ease both}
+@keyframes resumeReveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.resume-actions{justify-content:flex-end;margin:0 0 17px}
+.resume-language{border-radius:999px;padding:10px 17px;background:rgba(255,255,255,.7)}
+.resume-language.active,.resume-language:hover{background:#2AAFA5;border-color:#2AAFA5}
+.resume-paper{max-width:none;padding:0;background:transparent;border:0;box-shadow:none;color:#203D3E}
+.resume-topline{padding:0 4px 13px;border-color:#CFE5E1}
+.resume-name{margin-top:17px;padding:24px 28px 19px;border:1px solid #D5EAE6;border-radius:24px;background:linear-gradient(120deg,#E0F3EF,#F8FCFB);border-bottom:1px solid #D5EAE6}
+.resume-name h3{font-size:clamp(32px,4vw,44px)}
+.resume-name p{max-width:700px}
+.resume-contact{margin-top:12px;padding:13px 20px;border:1px solid #D9EAE7;border-radius:18px;background:#fff}
+.resume-columns{grid-template-columns:minmax(0,1.45fr) minmax(230px,1fr);gap:15px;padding-top:15px;align-items:start}
+.resume-columns>div,.resume-columns>aside{display:grid;gap:14px;align-content:start}
+.resume-block{margin:0;padding:21px 23px 19px;border:1px solid #D8EAE7;border-radius:22px;background:rgba(255,255,255,.88);box-shadow:0 7px 24px rgba(37,111,105,.035)}
+.resume-block h4{font-size:10px;letter-spacing:.12em;border:0;padding:0 0 10px;margin:0 0 11px;position:relative}
+.resume-block h4:after{content:"";display:block;width:28px;height:2px;border-radius:2px;background:#73C8BE;position:absolute;left:0;bottom:0}
+.resume-entry{margin-bottom:15px}
+.resume-entry:last-child{margin-bottom:0}
+.resume-entry-head strong{font-size:12px}
+.resume-entry-head time{font-size:9px}
+.resume-entry p,.resume-block p,.resume-block li{font-size:11px;line-height:1.8}
+.resume-block ul{padding-left:15px}
+@media(max-width:700px){
+ .resume-section{padding:72px 6% 80px}
+ .resume-disclosure>summary{padding:17px;border-radius:19px}
+ .disclosure-label{gap:12px}
+ .disclosure-label strong{font-size:18px}
+ .disclosure-label small{font-size:10px}
+ .disclosure-index{width:36px;height:36px;flex:none}
+ .resume-actions{justify-content:flex-start;flex-wrap:wrap}
+ .resume-paper{padding:0}
+ .resume-name{padding:20px;border-radius:19px}
+ .resume-columns{grid-template-columns:1fr;gap:13px}
+ .resume-columns>div,.resume-columns>aside{gap:13px}
+ .resume-block{padding:18px;border-radius:19px}
+}
