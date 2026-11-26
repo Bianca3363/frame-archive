@@ -74,3 +74,66 @@
  .resume-columns>div,.resume-columns>aside{gap:13px}
  .resume-block{padding:18px;border-radius:19px}
 }
+
+/* Refined profile layout: align with portfolio grid and use a narrower editorial measure */
+.resume-section{
+  padding:105px 9.5% 112px;
+  background:linear-gradient(180deg,#F3FAF9 0%,#EFF8F6 100%);
+  border-bottom:1px solid var(--line);
+}
+.resume-heading{max-width:100%;margin:0 0 30px}
+.resume-disclosure{width:100%;max-width:860px;margin:0 auto}
+.resume-disclosure>summary{
+  padding:20px 24px;
+  border:1px solid #D4E6E3;
+  border-radius:16px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 5px 18px rgba(35,85,82,.035);
+}
+.resume-disclosure>summary:hover{transform:translateY(-1px);border-color:#A8D4CE}
+.disclosure-index{width:36px;height:36px;background:#E4F2F0;color:#278F88;font:600 10px var(--mono)}
+.disclosure-label{gap:15px}
+.disclosure-label strong{font:600 17px var(--sans);letter-spacing:-.025em;color:#1E4142}
+.disclosure-label small{font:400 11px/1.65 var(--sans);color:#718888}
+.disclosure-icon{width:30px;height:30px;background:#E7F3F1;color:#278F88;font:500 18px var(--sans)}
+.resume-disclosure-content{max-width:860px;margin:0 auto;padding-top:20px}
+.resume-actions{margin-bottom:14px}
+.resume-language{font:600 10px var(--sans);letter-spacing:.025em;border-radius:8px;padding:9px 15px;color:#557372}
+.resume-language.active,.resume-language:hover{background:#248F89;border-color:#248F89;color:white}
+.resume-paper{font-family:"Inter","DM Sans",Arial,sans-serif}
+.resume-topline{font:600 9px "DM Mono",monospace;letter-spacing:.13em;color:#4A9992;border-color:#D8E8E5}
+.resume-name{
+  margin-top:13px;padding:23px 25px 19px;
+  border:1px solid #DCEAE7;border-radius:16px;
+  background:linear-gradient(110deg,#EAF5F3 0%,#F9FCFB 100%);
+}
+.resume-name h3{font:700 clamp(30px,3.5vw,38px)/1.1 "Inter",Arial,sans-serif;letter-spacing:-.045em;color:#183C3E;margin-bottom:9px}
+.resume-name p{font:500 11px/1.7 "Inter",Arial,sans-serif;color:#39817C;letter-spacing:.005em}
+.resume-contact{font:500 10px/1.8 "Inter",Arial,sans-serif;margin-top:10px;padding:11px 17px;border:1px solid #DCEAE7;border-radius:12px;background:rgba(255,255,255,.9);color:#627B7A}
+.resume-columns{grid-template-columns:minmax(0,1.45fr) minmax(205px,.9fr);gap:12px;padding-top:12px}
+.resume-columns>div,.resume-columns>aside{gap:12px}
+.resume-block{padding:18px 19px 16px;border:1px solid #DCEAE7;border-radius:15px;background:rgba(255,255,255,.92);box-shadow:0 4px 14px rgba(35,85,82,.025)}
+.resume-block h4{font:700 9px/1.5 "Inter",Arial,sans-serif;letter-spacing:.11em;color:#328E87;margin-bottom:10px}
+.resume-block h4:after{width:24px;height:2px;background:#69BEB5}
+.resume-entry{margin-bottom:13px}
+.resume-entry-head strong{font:600 10.5px/1.65 "Inter",Arial,sans-serif;color:#29494A}
+.resume-entry-head time{font:500 9px "DM Mono",monospace;color:#829A98}
+.resume-entry p,.resume-block p,.resume-block li{font:400 10px/1.8 "Inter",Arial,sans-serif;color:#657B7A}
+.resume-entry p{margin:3px 0}
+.resume-block ul{padding-left:15px;margin:6px 0}
+.resume-block li{padding-left:1px;margin:3px 0}
+@media(max-width:700px){
+ .resume-section{padding:75px 6% 82px}
+ .resume-disclosure{max-width:100%}
+ .resume-disclosure-content{max-width:100%}
+ .resume-disclosure>summary{padding:16px;border-radius:14px}
+ .disclosure-label{gap:11px}
+ .disclosure-label strong{font-size:15px}
+ .disclosure-label small{font-size:10px}
+ .resume-name{padding:19px;border-radius:14px}
+ .resume-columns{grid-template-columns:1fr;gap:11px}
+ .resume-columns>div,.resume-columns>aside{gap:11px}
+ .resume-block{padding:17px;border-radius:13px}
+ .resume-entry-head{display:block}
+ .resume-entry-head time{display:block;margin-top:3px}
+}
