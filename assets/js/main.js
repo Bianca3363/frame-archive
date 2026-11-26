@@ -27,7 +27,7 @@
     grid.innerHTML = projects.map(p => {
       const title = lang === "zh" ? p.titleZh : p.title;
       const subtitle = lang === "zh" ? p.subtitleZh : p.subtitle;
-      return `<article class="project-card" data-id="${safe(p.id)}" tabindex="0" role="button" aria-label="${safe(title)}">
+      return `<article class="project-card${p.category === "image" ? " project-card--image" : ""}" data-id="${safe(p.id)}" tabindex="0" role="button" aria-label="${safe(title)}">
         <div class="project-image"><img src="${safe(p.cover)}" alt="${safe(title)}" loading="lazy"><span class="image-index">${safe(p.id)} / FRAME</span><span class="play-mark" aria-hidden="true">▶</span></div>
         <div class="project-meta"><div><h3 class="project-title">${safe(title)}</h3><p class="project-subtitle">${safe(subtitle)}</p></div><span class="project-type">${safe(p.category.toUpperCase())}</span></div>
       </article>`;
@@ -46,7 +46,14 @@
     document.getElementById("dialogTitle").textContent = lang === "zh" ? p.titleZh : p.title;
     document.getElementById("dialogDescription").textContent = lang === "zh" ? p.descriptionZh : p.description;
     frame.innerHTML = "";
-    if(p.video){
+    if(p.image){
+      frame.classList.add("image-view");
+      const image = document.createElement("img");
+      image.src = p.image;
+      image.alt = lang === "zh" ? p.titleZh : p.title;
+      frame.appendChild(image);
+    } else if(p.video){
+      frame.classList.remove("image-view");
       const videoUrl = p.video.trim();
       if(/\.mp4($|\?)/i.test(videoUrl)){
         const video = document.createElement("video"); video.src = videoUrl; video.controls = true; video.autoplay = true; video.playsInline = true; frame.appendChild(video); video.style.width="100%";video.style.height="100%";
