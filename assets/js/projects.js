@@ -1,7 +1,7 @@
 /*
   EDIT YOUR VIDEOS HERE
   - title / titleZh: project names in English and Chinese
-  - category: travel, daily, or film
+  - category: video, image, or article
   - cover: thumbnail image URL (replace with your own screenshot when ready)
   - video: official Bilibili / YouTube / Vimeo embed URL, or direct MP4 URL
   - description / descriptionZh: short project notes
@@ -13,7 +13,7 @@ window.PROJECTS = [
     titleZh: "MV3｜生贺",
     subtitle: "Birthday tribute video / Bilibili",
     subtitleZh: "生日贺礼剪辑 / 哔哩哔哩",
-    category: "film",
+    category: "video",
     cover: "assets/images/mv3-cover.jpg",
     video: "https://player.bilibili.com/player.html?isOutside=true&bvid=BV1Lbaf6gEFZ&page=1&autoplay=0",
     description: "A birthday tribute edit. Watch the original video on Bilibili.",
