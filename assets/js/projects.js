@@ -14,7 +14,7 @@ window.PROJECTS = [
     subtitle: "Birthday tribute video / Bilibili",
     subtitleZh: "生日贺礼剪辑 / 哔哩哔哩",
     category: "film",
-    cover: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=85",
+    cover: "assets/images/mv3-cover.jpg",
     video: "https://player.bilibili.com/player.html?bvid=BV1Lbaf6gEFZ&page=1&danmaku=0",
     description: "A birthday tribute edit. Watch the original video on Bilibili.",
     descriptionZh: "一支生日主题的剪辑作品。原视频发布于哔哩哔哩。",
